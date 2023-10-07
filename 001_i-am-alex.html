@@ -21,6 +21,24 @@
         <tr><td colspan=3>"I am Alex."</td></tr>
       </table></div>
   </p>
+  <script>
+    // Check if the user prefers dark mode
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.style.backgroundColor = 'black'; // Set background color to black for dark mode
+      document.body.style.color = 'white'; // Set text color to white for dark mode
+    }
+
+    // Listen for changes in system color scheme preference
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (e.matches) {
+        document.body.style.backgroundColor = 'black'; // Set background color to black for dark mode
+        document.body.style.color = 'white'; // Set text color to white for dark mode
+      } else {
+        document.body.style.backgroundColor = 'white'; // Set background color to white for light mode
+        document.body.style.color = 'black'; // Set text color to black for light mode
+      }
+    });
+  </script>
 </body>
 
 </html>
