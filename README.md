@@ -9,5 +9,6 @@
 
 Glossing abbreviationsː
 ```
-INT, Intransitive
+CMPR, comparative
+PPL, people class
 ```
